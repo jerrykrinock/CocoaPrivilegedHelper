@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		486596F315E7ABEF00906B84 /* CPHTaskmaster+InstallATool.m in Sources */ = {isa = PBXBuildFile; fileRef = 486596F215E7ABEE00906B84 /* CPHTaskmaster+InstallATool.m */; };
+		48902F8415E03D3B0004CA48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48902F7315E03CE40004CA48 /* InfoPlist.strings */; };
+		48902F8515E03D750004CA48 /* cph-hellotool-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7715E03CE40004CA48 /* cph-hellotool-main.m */; };
+		48902F8615E03D8D0004CA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7815E03CE40004CA48 /* main.m */; };
+		48902F8715E03DB30004CA48 /* CPHDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7C15E03CE40004CA48 /* CPHDemoAppDelegate.m */; };
+		48902F8815E03DCF0004CA48 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7D15E03D0E0004CA48 /* BetterAuthorizationSampleLib.c */; };
+		48902F8915E03DD00004CA48 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7D15E03D0E0004CA48 /* BetterAuthorizationSampleLib.c */; };
+		4890CF4515E4A153000E1743 /* CPHTasks_Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4315E4A153000E1743 /* CPHTasks_Demo.m */; };
+		4890CF5915E4A1D7000E1743 /* CPHTaskmaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4E15E4A1D7000E1743 /* CPHTaskmaster.m */; };
+		4890CF5A15E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF5015E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.m */; };
+		4890CF5B15E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF5215E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.m */; };
+		4890CF5D15E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF5615E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.m */; };
+		4890CF5E15E4A1D7000E1743 /* CPHTaskmaster+StatPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF5815E4A1D7000E1743 /* CPHTaskmaster+StatPaths.m */; };
+		4890CFCA15E574B7000E1743 /* NSError+LowLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFC915E574B7000E1743 /* NSError+LowLevel.m */; };
+		4890CFCB15E574B7000E1743 /* NSError+LowLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFC915E574B7000E1743 /* NSError+LowLevel.m */; };
+		4890CFD615E5F88D000E1743 /* HelperToolMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCD15E5F88D000E1743 /* HelperToolMain.c */; };
+		4890CFD715E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCE15E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c */; };
+		4890CFD815E5F88D000E1743 /* HelperToolTaskDoGetUID.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCF15E5F88D000E1743 /* HelperToolTaskDoGetUID.c */; };
+		4890CFD915E5F88D000E1743 /* HelperToolTaskDoGetVersion.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD015E5F88D000E1743 /* HelperToolTaskDoGetVersion.c */; };
+		4890CFDA15E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD115E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c */; };
+		4890CFDB15E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD215E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c */; };
+		4890CFDC15E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD315E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c */; };
+		4890CFDD15E5F88D000E1743 /* HelperToolTaskDoStatPaths.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD415E5F88D000E1743 /* HelperToolTaskDoStatPaths.c */; };
+		4890CFDE15E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD515E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c */; };
+		4890CFE115E5F982000E1743 /* MoreCFQ.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFDF15E5F982000E1743 /* MoreCFQ.c */; };
+		4890CFE715E5F9F0000E1743 /* RecursiveChown.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE315E5F9F0000E1743 /* RecursiveChown.c */; };
+		4890CFE815E5F9F0000E1743 /* SSYUnixPathUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE515E5F9F0000E1743 /* SSYUnixPathUtils.c */; };
+		4890CFEA15E5FA94000E1743 /* HelperToolTaskDoInstallATool.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE915E5FA94000E1743 /* HelperToolTaskDoInstallATool.c */; };
+		4890CFEB15E5FF8B000E1743 /* CommandProcs_Demo.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4115E4A153000E1743 /* CommandProcs_Demo.c */; };
+		4890CFEC15E600FB000E1743 /* CPHTasks_Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4315E4A153000E1743 /* CPHTasks_Demo.m */; };
+		4890CFF015E6DE2F000E1743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890CFEF15E6DE2F000E1743 /* MainMenu.xib */; };
+		4890CFF715E71006000E1743 /* SSYDictionaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFF615E71005000E1743 /* SSYDictionaryEntry.m */; };
+		48B7483C161FF384000816F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A15494160F98B9008B9F2E /* Localizable.strings */; };
+		48D77ACD161A76E90064C439 /* SSY_ASL.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D77ACB161A76E90064C439 /* SSY_ASL.c */; };
+		48D77AD8161B16E60064C439 /* SSY_ASL.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D77ACB161A76E90064C439 /* SSY_ASL.c */; };
+		AA35BF7A1503C30200DA4314 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BF791503C30200DA4314 /* Cocoa.framework */; };
+		AA35BFA91503CB2B00DA4314 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFA81503CB2B00DA4314 /* ServiceManagement.framework */; };
+		AA35BFAB1503CB3200DA4314 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFAA1503CB3200DA4314 /* Security.framework */; };
+		AA35BFBA1503CBC700DA4314 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFAA1503CB3200DA4314 /* Security.framework */; };
+		AA35BFBC1503CBCE00DA4314 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFBB1503CBCE00DA4314 /* CoreFoundation.framework */; };
+		AA35BFC51503CC2C00DA4314 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFC41503CC2C00DA4314 /* CoreServices.framework */; };
+		AA35BFD81503CF2F00DA4314 /* cph-hellotool in Resources */ = {isa = PBXBuildFile; fileRef = AA35BFCA1503CCDF00DA4314 /* cph-hellotool */; };
+		AA35BFDA1503CF7D00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper in Copy Launch Services */ = {isa = PBXBuildFile; fileRef = AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA35BFC21503CBFC00DA4314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA35BF6C1503C30100DA4314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA35BFAF1503CB6C00DA4314;
+			remoteInfo = ExamplePrivilegedHelper;
+		};
+		AA35BFD41503CD1500DA4314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA35BF6C1503C30100DA4314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA35BFC91503CCDF00DA4314;
+			remoteInfo = ssexampletool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA35BFC81503CCDF00DA4314 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AA35BFD91503CF6E00DA4314 /* Copy Launch Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				AA35BFDA1503CF7D00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper in Copy Launch Services */,
+			);
+			name = "Copy Launch Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		486596F115E7ABEE00906B84 /* CPHTaskmaster+InstallATool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+InstallATool.h"; path = "CPHTaskmaster/CPHTaskmaster+InstallATool.h"; sourceTree = "<group>"; };
+		486596F215E7ABEE00906B84 /* CPHTaskmaster+InstallATool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+InstallATool.m"; path = "CPHTaskmaster/CPHTaskmaster+InstallATool.m"; sourceTree = "<group>"; };
+		48902F6715E01FDB0004CA48 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		48902F7415E03CE40004CA48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		48902F7715E03CE40004CA48 /* cph-hellotool-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "cph-hellotool-main.m"; path = "Demo/cph-hellotool-main.m"; sourceTree = "<group>"; };
+		48902F7815E03CE40004CA48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = "<group>"; };
+		48902F7915E03CE40004CA48 /* CPHDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CPHDemoApp-Info.plist"; path = "Demo/CPHDemoApp-Info.plist"; sourceTree = "<group>"; };
+		48902F7A15E03CE40004CA48 /* CPHDemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CPHDemoApp-Prefix.pch"; path = "Demo/CPHDemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		48902F7B15E03CE40004CA48 /* CPHDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPHDemoAppDelegate.h; path = Demo/CPHDemoAppDelegate.h; sourceTree = "<group>"; };
+		48902F7C15E03CE40004CA48 /* CPHDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CPHDemoAppDelegate.m; path = Demo/CPHDemoAppDelegate.m; sourceTree = "<group>"; };
+		48902F7D15E03D0E0004CA48 /* BetterAuthorizationSampleLib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = BetterAuthorizationSampleLib.c; path = Library/BetterAuthorizationSampleLib.c; sourceTree = "<group>"; };
+		48902F7E15E03D0E0004CA48 /* BetterAuthorizationSampleLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BetterAuthorizationSampleLib.h; path = Library/BetterAuthorizationSampleLib.h; sourceTree = "<group>"; };
+		48902F7F15E03D0E0004CA48 /* CocoaPrivilegedHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CocoaPrivilegedHelper-Info.plist"; path = "Library/CocoaPrivilegedHelper-Info.plist"; sourceTree = "<group>"; };
+		48902F8015E03D0E0004CA48 /* CocoaPrivilegedHelper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CocoaPrivilegedHelper-Launchd.plist"; path = "Library/CocoaPrivilegedHelper-Launchd.plist"; sourceTree = "<group>"; };
+		48902F8115E03D0E0004CA48 /* CPHTasks_InstallATool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = CPHTasks_InstallATool.c; path = Library/CPHTasks_InstallATool.c; sourceTree = "<group>"; };
+		48902F8215E03D0E0004CA48 /* CPHTasks_InstallATool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPHTasks_InstallATool.h; path = Library/CPHTasks_InstallATool.h; sourceTree = "<group>"; };
+		4890CF4115E4A153000E1743 /* CommandProcs_Demo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CommandProcs_Demo.c; path = ApplicationCases/CommandProcs_Demo.c; sourceTree = "<group>"; };
+		4890CF4215E4A153000E1743 /* CPHTasks_Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPHTasks_Demo.h; path = ApplicationCases/CPHTasks_Demo.h; sourceTree = "<group>"; };
+		4890CF4315E4A153000E1743 /* CPHTasks_Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPHTasks_Demo.m; path = ApplicationCases/CPHTasks_Demo.m; sourceTree = "<group>"; };
+		4890CF4615E4A167000E1743 /* CommandProcs_SetAnyUserPrefs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = CommandProcs_SetAnyUserPrefs.c; path = ApplicationCases/CommandProcs_SetAnyUserPrefs.c; sourceTree = "<group>"; };
+		4890CF4715E4A167000E1743 /* CPHTasks_SetAnyUserPrefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPHTasks_SetAnyUserPrefs.h; path = ApplicationCases/CPHTasks_SetAnyUserPrefs.h; sourceTree = "<group>"; };
+		4890CF4815E4A167000E1743 /* CPHTasks_SetAnyUserPrefs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CPHTasks_SetAnyUserPrefs.m; path = ApplicationCases/CPHTasks_SetAnyUserPrefs.m; sourceTree = "<group>"; };
+		4890CF4915E4A175000E1743 /* CommandProcs_Typicapp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = CommandProcs_Typicapp.c; path = ApplicationCases/CommandProcs_Typicapp.c; sourceTree = "<group>"; };
+		4890CF4A15E4A175000E1743 /* CPHTasks_Typicapp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPHTasks_Typicapp.h; path = ApplicationCases/CPHTasks_Typicapp.h; sourceTree = "<group>"; };
+		4890CF4B15E4A175000E1743 /* CPHTasks_Typicapp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CPHTasks_Typicapp.m; path = ApplicationCases/CPHTasks_Typicapp.m; sourceTree = "<group>"; };
+		4890CF4D15E4A1D7000E1743 /* CPHTaskmaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPHTaskmaster.h; path = CPHTaskmaster/CPHTaskmaster.h; sourceTree = "<group>"; };
+		4890CF4E15E4A1D7000E1743 /* CPHTaskmaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPHTaskmaster.m; path = CPHTaskmaster/CPHTaskmaster.m; sourceTree = "<group>"; };
+		4890CF4F15E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+CopyPaths.h"; path = "CPHTaskmaster/CPHTaskmaster+CopyPaths.h"; sourceTree = "<group>"; };
+		4890CF5015E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+CopyPaths.m"; path = "CPHTaskmaster/CPHTaskmaster+CopyPaths.m"; sourceTree = "<group>"; };
+		4890CF5115E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+DemoTasks.h"; path = "CPHTaskmaster/CPHTaskmaster+DemoTasks.h"; sourceTree = "<group>"; };
+		4890CF5215E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+DemoTasks.m"; path = "CPHTaskmaster/CPHTaskmaster+DemoTasks.m"; sourceTree = "<group>"; };
+		4890CF5315E4A1D7000E1743 /* CPHTaskmaster+SetAnyUserPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+SetAnyUserPrefs.h"; path = "CPHTaskmaster/CPHTaskmaster+SetAnyUserPrefs.h"; sourceTree = "<group>"; };
+		4890CF5415E4A1D7000E1743 /* CPHTaskmaster+SetAnyUserPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+SetAnyUserPrefs.m"; path = "CPHTaskmaster/CPHTaskmaster+SetAnyUserPrefs.m"; sourceTree = "<group>"; };
+		4890CF5515E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+SetPermissions.h"; path = "CPHTaskmaster/CPHTaskmaster+SetPermissions.h"; sourceTree = "<group>"; };
+		4890CF5615E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+SetPermissions.m"; path = "CPHTaskmaster/CPHTaskmaster+SetPermissions.m"; sourceTree = "<group>"; };
+		4890CF5715E4A1D7000E1743 /* CPHTaskmaster+StatPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CPHTaskmaster+StatPaths.h"; path = "CPHTaskmaster/CPHTaskmaster+StatPaths.h"; sourceTree = "<group>"; };
+		4890CF5815E4A1D7000E1743 /* CPHTaskmaster+StatPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CPHTaskmaster+StatPaths.m"; path = "CPHTaskmaster/CPHTaskmaster+StatPaths.m"; sourceTree = "<group>"; };
+		4890CF9115E56D57000E1743 /* CPH_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPH_Constants.h; path = Library/CPH_Constants.h; sourceTree = "<group>"; };
+		4890CF9215E56F64000E1743 /* CPHHelpee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPHHelpee.h; path = Library/CPHHelpee.h; sourceTree = "<group>"; };
+		4890CFC815E574B7000E1743 /* NSError+LowLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+LowLevel.h"; path = "../../CategoriesObjC/NSError+LowLevel.h"; sourceTree = "<group>"; };
+		4890CFC915E574B7000E1743 /* NSError+LowLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+LowLevel.m"; path = "../../CategoriesObjC/NSError+LowLevel.m"; sourceTree = "<group>"; };
+		4890CFCD15E5F88D000E1743 /* HelperToolMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolMain.c; path = HelperTool/HelperToolMain.c; sourceTree = "<group>"; };
+		4890CFCE15E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoCopyPaths.c; path = HelperTool/HelperToolTaskDoCopyPaths.c; sourceTree = "<group>"; };
+		4890CFCF15E5F88D000E1743 /* HelperToolTaskDoGetUID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoGetUID.c; path = HelperTool/HelperToolTaskDoGetUID.c; sourceTree = "<group>"; };
+		4890CFD015E5F88D000E1743 /* HelperToolTaskDoGetVersion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoGetVersion.c; path = HelperTool/HelperToolTaskDoGetVersion.c; sourceTree = "<group>"; };
+		4890CFD115E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoOpenSomeLowNumberedPorts.c; path = HelperTool/HelperToolTaskDoOpenSomeLowNumberedPorts.c; sourceTree = "<group>"; };
+		4890CFD215E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoSetAnyUserPrefs.c; path = HelperTool/HelperToolTaskDoSetAnyUserPrefs.c; sourceTree = "<group>"; };
+		4890CFD315E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoSetPermissions.c; path = HelperTool/HelperToolTaskDoSetPermissions.c; sourceTree = "<group>"; };
+		4890CFD415E5F88D000E1743 /* HelperToolTaskDoStatPaths.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoStatPaths.c; path = HelperTool/HelperToolTaskDoStatPaths.c; sourceTree = "<group>"; };
+		4890CFD515E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoWriteDataToFile.c; path = HelperTool/HelperToolTaskDoWriteDataToFile.c; sourceTree = "<group>"; };
+		4890CFDF15E5F982000E1743 /* MoreCFQ.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = MoreCFQ.c; path = ../../Functions/AppleMoreIsBetter/MoreCFQ/MoreCFQ.c; sourceTree = "<group>"; };
+		4890CFE015E5F982000E1743 /* MoreCFQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCFQ.h; path = ../../Functions/AppleMoreIsBetter/MoreCFQ/MoreCFQ.h; sourceTree = "<group>"; };
+		4890CFE215E5F9CA000E1743 /* MoreSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreSetup.h; path = ../../Functions/AppleMoreIsBetter/MoreSetup.h; sourceTree = "<group>"; };
+		4890CFE315E5F9F0000E1743 /* RecursiveChown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = RecursiveChown.c; path = ../../Functions/RecursiveChown.c; sourceTree = "<group>"; };
+		4890CFE415E5F9F0000E1743 /* RecursiveChown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecursiveChown.h; path = ../../Functions/RecursiveChown.h; sourceTree = "<group>"; };
+		4890CFE515E5F9F0000E1743 /* SSYUnixPathUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SSYUnixPathUtils.c; path = ../../Functions/SSYUnixPathUtils.c; sourceTree = "<group>"; };
+		4890CFE615E5F9F0000E1743 /* SSYUnixPathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSYUnixPathUtils.h; path = ../../Functions/SSYUnixPathUtils.h; sourceTree = "<group>"; };
+		4890CFE915E5FA94000E1743 /* HelperToolTaskDoInstallATool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelperToolTaskDoInstallATool.c; path = HelperTool/HelperToolTaskDoInstallATool.c; sourceTree = "<group>"; };
+		4890CFEF15E6DE2F000E1743 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Demo/MainMenu.xib; sourceTree = "<group>"; };
+		4890CFF515E71005000E1743 /* SSYDictionaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSYDictionaryEntry.h; path = ../../ClassesObjC/SSYDictionaryEntry.h; sourceTree = "<group>"; };
+		4890CFF615E71005000E1743 /* SSYDictionaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSYDictionaryEntry.m; path = ../../ClassesObjC/SSYDictionaryEntry.m; sourceTree = "<group>"; };
+		48A15495160F98B9008B9F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		48D77ACB161A76E90064C439 /* SSY_ASL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SSY_ASL.c; path = ../../Functions/SSY_ASL.c; sourceTree = "<group>"; };
+		48D77ACC161A76E90064C439 /* SSY_ASL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSY_ASL.h; path = ../../Functions/SSY_ASL.h; sourceTree = "<group>"; };
+		AA35BF751503C30200DA4314 /* CPHDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPHDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35BF791503C30200DA4314 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AA35BF7C1503C30200DA4314 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA35BF7D1503C30200DA4314 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AA35BF7E1503C30200DA4314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA35BFA81503CB2B00DA4314 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		AA35BFAA1503CB3200DA4314 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.sheepsystems.CocoaPrivilegedHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35BFBB1503CBCE00DA4314 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AA35BFC41503CC2C00DA4314 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		AA35BFCA1503CCDF00DA4314 /* cph-hellotool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cph-hellotool"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA35BF721503C30200DA4314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA35BFAB1503CB3200DA4314 /* Security.framework in Frameworks */,
+				AA35BFA91503CB2B00DA4314 /* ServiceManagement.framework in Frameworks */,
+				AA35BF7A1503C30200DA4314 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35BFAD1503CB6C00DA4314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA35BFC51503CC2C00DA4314 /* CoreServices.framework in Frameworks */,
+				AA35BFBC1503CBCE00DA4314 /* CoreFoundation.framework in Frameworks */,
+				AA35BFBA1503CBC700DA4314 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35BFC71503CCDF00DA4314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48902F6F15E03CA00004CA48 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4890CFEF15E6DE2F000E1743 /* MainMenu.xib */,
+				48902F7215E03CE40004CA48 /* en.lproj */,
+				48902F7715E03CE40004CA48 /* cph-hellotool-main.m */,
+				48902F7815E03CE40004CA48 /* main.m */,
+				4890CFF515E71005000E1743 /* SSYDictionaryEntry.h */,
+				4890CFF615E71005000E1743 /* SSYDictionaryEntry.m */,
+				48902F7915E03CE40004CA48 /* CPHDemoApp-Info.plist */,
+				48902F7A15E03CE40004CA48 /* CPHDemoApp-Prefix.pch */,
+				48902F7B15E03CE40004CA48 /* CPHDemoAppDelegate.h */,
+				48902F7C15E03CE40004CA48 /* CPHDemoAppDelegate.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		48902F7115E03CA90004CA48 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF9115E56D57000E1743 /* CPH_Constants.h */,
+				4890CF9215E56F64000E1743 /* CPHHelpee.h */,
+				48902F7D15E03D0E0004CA48 /* BetterAuthorizationSampleLib.c */,
+				48902F7E15E03D0E0004CA48 /* BetterAuthorizationSampleLib.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		48902F7215E03CE40004CA48 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				48A15494160F98B9008B9F2E /* Localizable.strings */,
+				48902F7315E03CE40004CA48 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = Demo/en.lproj;
+			sourceTree = "<group>";
+		};
+		4890CF3C15E4A0AE000E1743 /* Application Cases */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF4015E4A111000E1743 /* Demo App (6 tasks) */,
+				4890CF3E15E4A0BC000E1743 /* Typical App (4 cases) */,
+				4890CF5F15E50A48000E1743 /* Install A System Tool (1 task) */,
+				4890CF3F15E4A0CF000E1743 /* SetAnyUserPrefs (1 task) */,
+			);
+			name = "Application Cases";
+			sourceTree = "<group>";
+		};
+		4890CF3E15E4A0BC000E1743 /* Typical App (4 cases) */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF4B15E4A175000E1743 /* CPHTasks_Typicapp.m */,
+				4890CF4915E4A175000E1743 /* CommandProcs_Typicapp.c */,
+				4890CF4A15E4A175000E1743 /* CPHTasks_Typicapp.h */,
+			);
+			name = "Typical App (4 cases)";
+			sourceTree = "<group>";
+		};
+		4890CF3F15E4A0CF000E1743 /* SetAnyUserPrefs (1 task) */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF4815E4A167000E1743 /* CPHTasks_SetAnyUserPrefs.m */,
+				4890CF4615E4A167000E1743 /* CommandProcs_SetAnyUserPrefs.c */,
+				4890CF4715E4A167000E1743 /* CPHTasks_SetAnyUserPrefs.h */,
+			);
+			name = "SetAnyUserPrefs (1 task)";
+			sourceTree = "<group>";
+		};
+		4890CF4015E4A111000E1743 /* Demo App (6 tasks) */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF4315E4A153000E1743 /* CPHTasks_Demo.m */,
+				4890CF4115E4A153000E1743 /* CommandProcs_Demo.c */,
+				4890CF4215E4A153000E1743 /* CPHTasks_Demo.h */,
+			);
+			name = "Demo App (6 tasks)";
+			sourceTree = "<group>";
+		};
+		4890CF4C15E4A1AF000E1743 /* CPHTaskmaster */ = {
+			isa = PBXGroup;
+			children = (
+				4890CF4D15E4A1D7000E1743 /* CPHTaskmaster.h */,
+				4890CF4E15E4A1D7000E1743 /* CPHTaskmaster.m */,
+				4890CF4F15E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.h */,
+				4890CF5015E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.m */,
+				4890CF5115E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.h */,
+				4890CF5215E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.m */,
+				486596F115E7ABEE00906B84 /* CPHTaskmaster+InstallATool.h */,
+				486596F215E7ABEE00906B84 /* CPHTaskmaster+InstallATool.m */,
+				4890CF5315E4A1D7000E1743 /* CPHTaskmaster+SetAnyUserPrefs.h */,
+				4890CF5415E4A1D7000E1743 /* CPHTaskmaster+SetAnyUserPrefs.m */,
+				4890CF5515E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.h */,
+				4890CF5615E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.m */,
+				4890CF5715E4A1D7000E1743 /* CPHTaskmaster+StatPaths.h */,
+				4890CF5815E4A1D7000E1743 /* CPHTaskmaster+StatPaths.m */,
+			);
+			name = CPHTaskmaster;
+			sourceTree = "<group>";
+		};
+		4890CF5F15E50A48000E1743 /* Install A System Tool (1 task) */ = {
+			isa = PBXGroup;
+			children = (
+				48902F8115E03D0E0004CA48 /* CPHTasks_InstallATool.c */,
+				48902F8215E03D0E0004CA48 /* CPHTasks_InstallATool.h */,
+			);
+			name = "Install A System Tool (1 task)";
+			sourceTree = "<group>";
+		};
+		4890CFC715E57401000E1743 /* Ex-Project Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4890CFC815E574B7000E1743 /* NSError+LowLevel.h */,
+				4890CFC915E574B7000E1743 /* NSError+LowLevel.m */,
+			);
+			name = "Ex-Project Utilities";
+			sourceTree = "<group>";
+		};
+		4890CFCC15E5F7E4000E1743 /* HelperTool */ = {
+			isa = PBXGroup;
+			children = (
+				4890CFCD15E5F88D000E1743 /* HelperToolMain.c */,
+				4890CFCE15E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c */,
+				4890CFCF15E5F88D000E1743 /* HelperToolTaskDoGetUID.c */,
+				4890CFD015E5F88D000E1743 /* HelperToolTaskDoGetVersion.c */,
+				4890CFD115E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c */,
+				4890CFD215E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c */,
+				4890CFD315E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c */,
+				4890CFD415E5F88D000E1743 /* HelperToolTaskDoStatPaths.c */,
+				4890CFD515E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c */,
+				4890CFE915E5FA94000E1743 /* HelperToolTaskDoInstallATool.c */,
+				4890CFDF15E5F982000E1743 /* MoreCFQ.c */,
+				4890CFE015E5F982000E1743 /* MoreCFQ.h */,
+				4890CFE215E5F9CA000E1743 /* MoreSetup.h */,
+				4890CFE315E5F9F0000E1743 /* RecursiveChown.c */,
+				4890CFE415E5F9F0000E1743 /* RecursiveChown.h */,
+				4890CFE515E5F9F0000E1743 /* SSYUnixPathUtils.c */,
+				4890CFE615E5F9F0000E1743 /* SSYUnixPathUtils.h */,
+				48D77ACB161A76E90064C439 /* SSY_ASL.c */,
+				48D77ACC161A76E90064C439 /* SSY_ASL.h */,
+				48902F7F15E03D0E0004CA48 /* CocoaPrivilegedHelper-Info.plist */,
+				48902F8015E03D0E0004CA48 /* CocoaPrivilegedHelper-Launchd.plist */,
+			);
+			name = HelperTool;
+			sourceTree = "<group>";
+		};
+		AA35BF6A1503C30100DA4314 = {
+			isa = PBXGroup;
+			children = (
+				4890CFCC15E5F7E4000E1743 /* HelperTool */,
+				4890CF4C15E4A1AF000E1743 /* CPHTaskmaster */,
+				4890CF3C15E4A0AE000E1743 /* Application Cases */,
+				48902F6715E01FDB0004CA48 /* ReadMe.txt */,
+				48902F6F15E03CA00004CA48 /* Demo */,
+				48902F7115E03CA90004CA48 /* Library */,
+				4890CFC715E57401000E1743 /* Ex-Project Utilities */,
+				AA35BFC41503CC2C00DA4314 /* CoreServices.framework */,
+				AA35BFBB1503CBCE00DA4314 /* CoreFoundation.framework */,
+				AA35BFAA1503CB3200DA4314 /* Security.framework */,
+				AA35BFA81503CB2B00DA4314 /* ServiceManagement.framework */,
+				AA35BF781503C30200DA4314 /* Frameworks */,
+				AA35BF761503C30200DA4314 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA35BF761503C30200DA4314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA35BF751503C30200DA4314 /* CPHDemoApp.app */,
+				AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */,
+				AA35BFCA1503CCDF00DA4314 /* cph-hellotool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA35BF781503C30200DA4314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA35BF791503C30200DA4314 /* Cocoa.framework */,
+				AA35BF7B1503C30200DA4314 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA35BF7B1503C30200DA4314 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA35BF7C1503C30200DA4314 /* AppKit.framework */,
+				AA35BF7D1503C30200DA4314 /* CoreData.framework */,
+				AA35BF7E1503C30200DA4314 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA35BF741503C30200DA4314 /* CPHDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35BF931503C30200DA4314 /* Build configuration list for PBXNativeTarget "CPHDemoApp" */;
+			buildPhases = (
+				AA35BF711503C30200DA4314 /* Sources */,
+				AA35BF721503C30200DA4314 /* Frameworks */,
+				AA35BF731503C30200DA4314 /* Resources */,
+				AA35BFD91503CF6E00DA4314 /* Copy Launch Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA35BFD51503CD1500DA4314 /* PBXTargetDependency */,
+				AA35BFC31503CBFC00DA4314 /* PBXTargetDependency */,
+			);
+			name = CPHDemoApp;
+			productName = PrivilegedHelperExample;
+			productReference = AA35BF751503C30200DA4314 /* CPHDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "com.sheepsystems.CocoaPrivilegedHelper" */;
+			buildPhases = (
+				AA35BFAC1503CB6C00DA4314 /* Sources */,
+				AA35BFAD1503CB6C00DA4314 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.sheepsystems.CocoaPrivilegedHelper;
+			productName = ExamplePrivilegedHelper;
+			productReference = AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		AA35BFC91503CCDF00DA4314 /* cph-hellotool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35BFD11503CCDF00DA4314 /* Build configuration list for PBXNativeTarget "cph-hellotool" */;
+			buildPhases = (
+				AA35BFC61503CCDF00DA4314 /* Sources */,
+				AA35BFC71503CCDF00DA4314 /* Frameworks */,
+				AA35BFC81503CCDF00DA4314 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cph-hellotool";
+			productName = ssexampletool;
+			productReference = AA35BFCA1503CCDF00DA4314 /* cph-hellotool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA35BF6C1503C30100DA4314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SSY;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Sheep Systems";
+			};
+			buildConfigurationList = AA35BF6F1503C30100DA4314 /* Build configuration list for PBXProject "CocoaPrivilegedHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA35BF6A1503C30100DA4314;
+			productRefGroup = AA35BF761503C30200DA4314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA35BF741503C30200DA4314 /* CPHDemoApp */,
+				AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */,
+				AA35BFC91503CCDF00DA4314 /* cph-hellotool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA35BF731503C30200DA4314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA35BFD81503CF2F00DA4314 /* cph-hellotool in Resources */,
+				48902F8415E03D3B0004CA48 /* InfoPlist.strings in Resources */,
+				4890CFF015E6DE2F000E1743 /* MainMenu.xib in Resources */,
+				48B7483C161FF384000816F9 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA35BF711503C30200DA4314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48902F8615E03D8D0004CA48 /* main.m in Sources */,
+				48902F8715E03DB30004CA48 /* CPHDemoAppDelegate.m in Sources */,
+				48902F8815E03DCF0004CA48 /* BetterAuthorizationSampleLib.c in Sources */,
+				4890CF4515E4A153000E1743 /* CPHTasks_Demo.m in Sources */,
+				4890CF5915E4A1D7000E1743 /* CPHTaskmaster.m in Sources */,
+				4890CF5A15E4A1D7000E1743 /* CPHTaskmaster+CopyPaths.m in Sources */,
+				4890CF5B15E4A1D7000E1743 /* CPHTaskmaster+DemoTasks.m in Sources */,
+				4890CF5D15E4A1D7000E1743 /* CPHTaskmaster+SetPermissions.m in Sources */,
+				4890CF5E15E4A1D7000E1743 /* CPHTaskmaster+StatPaths.m in Sources */,
+				4890CFCA15E574B7000E1743 /* NSError+LowLevel.m in Sources */,
+				4890CFF715E71006000E1743 /* SSYDictionaryEntry.m in Sources */,
+				486596F315E7ABEF00906B84 /* CPHTaskmaster+InstallATool.m in Sources */,
+				48D77AD8161B16E60064C439 /* SSY_ASL.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35BFAC1503CB6C00DA4314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48902F8915E03DD00004CA48 /* BetterAuthorizationSampleLib.c in Sources */,
+				4890CFCB15E574B7000E1743 /* NSError+LowLevel.m in Sources */,
+				4890CFD615E5F88D000E1743 /* HelperToolMain.c in Sources */,
+				4890CFD715E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c in Sources */,
+				4890CFD815E5F88D000E1743 /* HelperToolTaskDoGetUID.c in Sources */,
+				4890CFD915E5F88D000E1743 /* HelperToolTaskDoGetVersion.c in Sources */,
+				4890CFDA15E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c in Sources */,
+				4890CFDB15E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c in Sources */,
+				4890CFDC15E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c in Sources */,
+				4890CFDD15E5F88D000E1743 /* HelperToolTaskDoStatPaths.c in Sources */,
+				4890CFDE15E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c in Sources */,
+				4890CFE115E5F982000E1743 /* MoreCFQ.c in Sources */,
+				4890CFE715E5F9F0000E1743 /* RecursiveChown.c in Sources */,
+				4890CFE815E5F9F0000E1743 /* SSYUnixPathUtils.c in Sources */,
+				4890CFEA15E5FA94000E1743 /* HelperToolTaskDoInstallATool.c in Sources */,
+				4890CFEB15E5FF8B000E1743 /* CommandProcs_Demo.c in Sources */,
+				4890CFEC15E600FB000E1743 /* CPHTasks_Demo.m in Sources */,
+				48D77ACD161A76E90064C439 /* SSY_ASL.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35BFC61503CCDF00DA4314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48902F8515E03D750004CA48 /* cph-hellotool-main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA35BFC31503CBFC00DA4314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */;
+			targetProxy = AA35BFC21503CBFC00DA4314 /* PBXContainerItemProxy */;
+		};
+		AA35BFD51503CD1500DA4314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA35BFC91503CCDF00DA4314 /* cph-hellotool */;
+			targetProxy = AA35BFD41503CD1500DA4314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48902F7315E03CE40004CA48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48902F7415E03CE40004CA48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		48A15494160F98B9008B9F2E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A15495160F98B9008B9F2E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA35BF911503C30200DA4314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Jerry Krinock";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp=none";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA35BF921503C30200DA4314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Jerry Krinock";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA35BF941503C30200DA4314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/CPHDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/CPHDemoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA35BF951503C30200DA4314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/CPHDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/CPHDemoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AA35BFB81503CB6C00DA4314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CocoaPrivilegedHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Library/CocoaPrivilegedHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Library/CocoaPrivilegedHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA35BFB91503CB6C00DA4314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CocoaPrivilegedHelper-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Library/CocoaPrivilegedHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Library/CocoaPrivilegedHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA35BFD21503CCDF00DA4314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA35BFD31503CCDF00DA4314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA35BF6F1503C30100DA4314 /* Build configuration list for PBXProject "CocoaPrivilegedHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35BF911503C30200DA4314 /* Debug */,
+				AA35BF921503C30200DA4314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35BF931503C30200DA4314 /* Build configuration list for PBXNativeTarget "CPHDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35BF941503C30200DA4314 /* Debug */,
+				AA35BF951503C30200DA4314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "com.sheepsystems.CocoaPrivilegedHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35BFB81503CB6C00DA4314 /* Debug */,
+				AA35BFB91503CB6C00DA4314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35BFD11503CCDF00DA4314 /* Build configuration list for PBXNativeTarget "cph-hellotool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35BFD21503CCDF00DA4314 /* Debug */,
+				AA35BFD31503CCDF00DA4314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA35BF6C1503C30100DA4314 /* Project object */;
+}
