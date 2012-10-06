@@ -2,21 +2,14 @@ CocoaPrivilegedHelper
 by Jerry Krinock
 -----------------------
 
-This project provides a framework ?? for doing tasks in Cocoa with
-a privilege escalation, in OS X without using deprecated methods like 
-AuthorizationExecuteWithPrivileges.  It is the successor to
-CPHsInCocoa.  The difference is that the it does not call
-AuthorizationExecuteWithPrivileges which was deprecated and replaced with
-SMJobBless in Mac OS X 10.6.  This project requires Mac OS X 10.6 or later.
+This project provides a library for doing tasks in Cocoa with privilege escalation.  It is the successor to my old AuthorizedTasksInCocoa project.  It has been updated by following the PrivilegedHelperExample published by Steve Streeting (see 'Credits', below).  The difference is that the it does not call AuthorizationExecuteWithPrivileges which was deprecated and replaced with SMJobBless in Mac OS X 10.6.  This project requires Mac OS X 10.6 or later.
 
-If your project requires Mac OS X 10.7 or later, do not use this project.
-There is an even better method, which uses XPC.
+If you do not need to support Mac OS X 10.6, do not use this project.  There is an even better method, which uses XPC.
 
 How to use the example
 ----------------------
 
-Unfortunately because of the code signing, you can't just compile and run this, 
-you need to make a few changes:
+Unfortunately because of the code signing, you can't just compile and run this, you need to make a few changes:
 
 1. Make sure you have a code signing certificate
 2. Edit CocoaPrivilegedHelperCommon.h and change kSigningCertCommonName to the 
@@ -49,6 +42,7 @@ are that the certificate is authorised by Apple, but you could change this.
 The App asks LaunchServices to install the privileged helper, which will later 
 be communicated with over a socket to perform the installation of a command-line
 tool. Code signing is used to prevent tampering with the process.
+
 
 Replicating this in your own projects
 -------------------------------------
