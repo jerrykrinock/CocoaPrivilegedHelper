@@ -16,7 +16,7 @@ OSStatus DoGetVersion(COMMAND_PROC_ARGUMENTS) {
 #pragma unused (aslMsg)
 	OSStatus					retval = noErr;
 	CFNumberRef					value;
-    static const int kCurrentVersion = 18;
+    static const int kCurrentVersion = 19;
 	
 	// Pre-conditions
 	

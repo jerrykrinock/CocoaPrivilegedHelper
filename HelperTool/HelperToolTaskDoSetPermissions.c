@@ -14,7 +14,7 @@
 #define MAX_PATH_CHARS 2047
 
 // Define this macro so that stat() will use 64-bit inode.  (Prior to
-// this change in BookMacster 1.11.10, we used the transitional function
+// this change in BookMacster 1.12, we used the transitional function
 // stat64(), which is now deprecated.
 #define _DARWIN_USE_64_BIT_INODE 1
 
