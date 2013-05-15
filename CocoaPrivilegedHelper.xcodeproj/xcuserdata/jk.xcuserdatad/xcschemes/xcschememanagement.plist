@@ -7,12 +7,12 @@
 		<key>CPHDemoApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 		<key>com.sheepsystems.CocoaPrivilegedHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>8</integer>
 		</dict>
 		<key>cph-hellotool.xcscheme</key>
 		<dict>

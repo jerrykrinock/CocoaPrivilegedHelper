@@ -58,7 +58,7 @@
 	// For efficiency in case the caller expects the path may not exist,
 	// and has passed error_p = NULL, we don't create a local error.
 	NSArray* paths = [NSArray arrayWithObject:path] ;
-	NSDictionary* stats ;
+	NSDictionary* stats = nil ;
 	BOOL ok = [self statFilePaths:paths
 						  stats_p:&stats
 						  error_p:error_p] ;
@@ -101,11 +101,13 @@
 - (NSDate*)modificationDateForPath:(NSString*)path 
 						   error_p:(NSError**)error_p {
 	struct stat aStat ;
+    struct timespec emptyTimespec ;
+    aStat.st_mtimespec = emptyTimespec ;
 	NSError* error = nil ;
 	NSDate* date = nil ;
 	BOOL ok = [[CPHTaskmaster sharedTaskmaster] statPath:path
-															  stat:&aStat
-														   error_p:&error] ;
+                                                    stat:&aStat
+                                                 error_p:&error] ;
 	if (ok) {
 		time_t secs = aStat.st_mtimespec.tv_sec ;
 		long nanosecs = aStat.st_mtimespec.tv_nsec ;
