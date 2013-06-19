@@ -1,4 +1,3 @@
-#include "BetterAuthorizationSampleLib.h"
 #include "CPHTasks_Demo.h"
 
 /*

@@ -32,9 +32,11 @@ Rough explanation
 
 There are 3 products defined here:
 
-1. The main application
-2. A privileged helper which can be used to perform privileged actions
-3. A simple command-line tool which we want installed
+1. The main application, named CPHDemoApp
+2. A privileged helper which can be used to perform privileged actions,
+   named CocoaPrivilegedHelper
+3. A little command-line tool which we will install to demo what we can do,
+   named cph-hellotool.
 
 It's CRITICAL that all 3 are codesigned. As currently set up, the requirements
 are that the certificate is authorised by Apple, but you could change this.

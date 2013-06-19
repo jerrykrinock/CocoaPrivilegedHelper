@@ -1154,6 +1154,102 @@ static int HandleConnection(
         // not the command is valid by comparing with the BASCommandSpec array.  Also, 
         // if the command is valid, return the associated right (if any).
 
+#if 0
+#warning Testing for Carol
+        {
+            pid_t pid = getpid() ;
+            char filename[79] ;
+            sprintf(filename, "/Users/jk/Desktop/Carol%05ld.txt", (long)pid) ;
+            FILE *f = fopen(filename, "w");
+            if (f == NULL)
+            {
+                printf("Error opening file!\n");
+                exit(1);
+            }
+            
+#if 0
+            /* print some text */
+            const char *text = "Write this to the file";
+            fprintf(f, "Some text: %s\n", text);
+            
+            /* print integers and floats */
+            int i = 1;
+            float py = 3.1415927;
+            fprintf(f, "Integer: %d, float: %f\n", i, py);
+            
+            /* printing single chatacters */
+            char c = 'A';
+            fprintf(f, "A character: %c\n", c);
+#endif
+            
+            size_t  commandIndex = 99 ;
+            size_t* commandIndexPtr = &commandIndex ;
+            
+            OSStatus					retval = noErr;
+            CFStringRef                 commandStr;
+            char *                      command;
+            long						commandSize = 0;
+            size_t						index = 0;
+            
+            // Pre-conditions
+            
+            assert(request != NULL);
+            assert(commands != NULL);
+            assert(commands[0].commandName != NULL);        // there must be at least one command
+            assert(commandIndexPtr != NULL);
+            
+            command = NULL;
+            
+            // Get the command as a C string.  To prevent untrusted command string from
+            // trying to run us out of memory, we limit its length to 1024 UTF-16 values.
+            
+            commandStr = CFDictionaryGetValue(request, CFSTR(kBASCommandKey));
+            if ( (commandStr == NULL) || (CFGetTypeID(commandStr) != CFStringGetTypeID()) ) {
+                retval = paramErr;
+            }
+            commandSize = CFStringGetLength(commandStr);
+            if ( (retval == noErr) && (commandSize > 1024) ) {
+                retval = paramErr;
+            }
+            if (retval == noErr) {
+                size_t      bufSize;
+                
+                bufSize = CFStringGetMaximumSizeForEncoding(CFStringGetLength(commandStr), kCFStringEncodingUTF8) + 1;
+                command = malloc(bufSize);
+                
+                if (command == NULL) {
+                    retval = memFullErr;
+                } else if ( ! CFStringGetCString(commandStr, command, bufSize, kCFStringEncodingUTF8) ) {
+                    retval = coreFoundationUnknownErr;
+                }
+            }
+            
+            // Search the commands array for that command.
+            
+            fprintf(f, "CAROL: Will search for command: %s\n", command);
+            if (retval == noErr) {
+                fprintf(f, "CAROL: Will really search for command: %s\n", command);
+                do {
+                    fprintf(f, "CAROL: index=%ld: name=%s\n", index, commands[index].commandName);
+                    if ( strcmp(commands[index].commandName, command) == 0 ) {
+                        *commandIndexPtr = index;
+                        break;
+                    }
+                    index += 1;
+                    if (commands[index].commandName == NULL) {
+                        // We have reached the null terminator in commands[]
+                        retval = kBASFailCommandNotFound ;
+                        fprintf(f, "CAROL: Whoops we have reached null error=%ld\n", (long)retval);
+                        break;
+                    }
+                } while (true);
+            }
+            
+            free(command);
+            fclose(f);
+        }
+#endif
+        
         commandProcStatus = FindCommand(request, commands, &commandIndex);
         
        // Acquire the associated right for the command.  If rightName is NULL, the

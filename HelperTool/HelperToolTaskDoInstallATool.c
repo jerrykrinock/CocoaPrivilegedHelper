@@ -6,9 +6,6 @@
 #include <CoreServices/CoreServices.h>
 
 #include "CPHTasks_InstallATool.h"
-#include "BetterAuthorizationSampleLib.h"
-#import "CPH_Constants.h"
-
 
 OSStatus DoInstallATool(
                               AuthorizationRef			auth,

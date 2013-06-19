@@ -39,6 +39,27 @@
 		4890CFEC15E600FB000E1743 /* CPHTasks_Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4315E4A153000E1743 /* CPHTasks_Demo.m */; };
 		4890CFF015E6DE2F000E1743 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890CFEF15E6DE2F000E1743 /* MainMenu.xib */; };
 		4890CFF715E71006000E1743 /* SSYDictionaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFF615E71005000E1743 /* SSYDictionaryEntry.m */; };
+		48928806174FDD4200CB17C4 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 48902F7D15E03D0E0004CA48 /* BetterAuthorizationSampleLib.c */; };
+		48928807174FDD4200CB17C4 /* NSError+LowLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFC915E574B7000E1743 /* NSError+LowLevel.m */; };
+		48928808174FDD4200CB17C4 /* HelperToolMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCD15E5F88D000E1743 /* HelperToolMain.c */; };
+		48928809174FDD4200CB17C4 /* HelperToolTaskDoCopyPaths.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCE15E5F88D000E1743 /* HelperToolTaskDoCopyPaths.c */; };
+		4892880A174FDD4200CB17C4 /* HelperToolTaskDoGetUID.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFCF15E5F88D000E1743 /* HelperToolTaskDoGetUID.c */; };
+		4892880B174FDD4200CB17C4 /* HelperToolTaskDoGetVersion.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD015E5F88D000E1743 /* HelperToolTaskDoGetVersion.c */; };
+		4892880C174FDD4200CB17C4 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD115E5F88D000E1743 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c */; };
+		4892880D174FDD4200CB17C4 /* HelperToolTaskDoSetAnyUserPrefs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD215E5F88D000E1743 /* HelperToolTaskDoSetAnyUserPrefs.c */; };
+		4892880E174FDD4200CB17C4 /* HelperToolTaskDoSetPermissions.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD315E5F88D000E1743 /* HelperToolTaskDoSetPermissions.c */; };
+		4892880F174FDD4200CB17C4 /* HelperToolTaskDoStatPaths.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD415E5F88D000E1743 /* HelperToolTaskDoStatPaths.c */; };
+		48928810174FDD4200CB17C4 /* HelperToolTaskDoWriteDataToFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFD515E5F88D000E1743 /* HelperToolTaskDoWriteDataToFile.c */; };
+		48928811174FDD4200CB17C4 /* MoreCFQ.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFDF15E5F982000E1743 /* MoreCFQ.c */; };
+		48928812174FDD4200CB17C4 /* RecursiveChown.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE315E5F9F0000E1743 /* RecursiveChown.c */; };
+		48928813174FDD4200CB17C4 /* SSYUnixPathUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE515E5F9F0000E1743 /* SSYUnixPathUtils.c */; };
+		48928814174FDD4200CB17C4 /* HelperToolTaskDoInstallATool.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CFE915E5FA94000E1743 /* HelperToolTaskDoInstallATool.c */; };
+		48928817174FDD4200CB17C4 /* SSY_ASL.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D77ACB161A76E90064C439 /* SSY_ASL.c */; };
+		48928819174FDD4200CB17C4 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFC41503CC2C00DA4314 /* CoreServices.framework */; };
+		4892881A174FDD4200CB17C4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFBB1503CBCE00DA4314 /* CoreFoundation.framework */; };
+		4892881B174FDD4200CB17C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA35BFAA1503CB3200DA4314 /* Security.framework */; };
+		48928820174FDD7B00CB17C4 /* CPHTasks_Typicapp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4B15E4A175000E1743 /* CPHTasks_Typicapp.m */; };
+		48928821174FDD8900CB17C4 /* CommandProcs_Typicapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4890CF4915E4A175000E1743 /* CommandProcs_Typicapp.c */; };
 		48B7483C161FF384000816F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A15494160F98B9008B9F2E /* Localizable.strings */; };
 		48D77ACD161A76E90064C439 /* SSY_ASL.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D77ACB161A76E90064C439 /* SSY_ASL.c */; };
 		48D77AD8161B16E60064C439 /* SSY_ASL.c in Sources */ = {isa = PBXBuildFile; fileRef = 48D77ACB161A76E90064C439 /* SSY_ASL.c */; };
@@ -154,6 +175,7 @@
 		4890CFEF15E6DE2F000E1743 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Demo/MainMenu.xib; sourceTree = "<group>"; };
 		4890CFF515E71005000E1743 /* SSYDictionaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSYDictionaryEntry.h; path = ../../ClassesObjC/SSYDictionaryEntry.h; sourceTree = "<group>"; };
 		4890CFF615E71005000E1743 /* SSYDictionaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSYDictionaryEntry.m; path = ../../ClassesObjC/SSYDictionaryEntry.m; sourceTree = "<group>"; };
+		4892881F174FDD4200CB17C4 /* com.sheepsystems.CocoaPrivilegedHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.sheepsystems.CocoaPrivilegedHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A15495160F98B9008B9F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		48D77ACB161A76E90064C439 /* SSY_ASL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SSY_ASL.c; path = ../../Functions/SSY_ASL.c; sourceTree = "<group>"; };
 		48D77ACC161A76E90064C439 /* SSY_ASL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSY_ASL.h; path = ../../Functions/SSY_ASL.h; sourceTree = "<group>"; };
@@ -171,6 +193,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		48928818174FDD4200CB17C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48928819174FDD4200CB17C4 /* CoreServices.framework in Frameworks */,
+				4892881A174FDD4200CB17C4 /* CoreFoundation.framework in Frameworks */,
+				4892881B174FDD4200CB17C4 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA35BF721503C30200DA4314 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +404,7 @@
 				AA35BF751503C30200DA4314 /* CPHDemoApp.app */,
 				AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */,
 				AA35BFCA1503CCDF00DA4314 /* cph-hellotool */,
+				4892881F174FDD4200CB17C4 /* com.sheepsystems.CocoaPrivilegedHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,6 +431,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		48928804174FDD4200CB17C4 /* CPH-Helper-Typicapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4892881C174FDD4200CB17C4 /* Build configuration list for PBXNativeTarget "CPH-Helper-Typicapp" */;
+			buildPhases = (
+				48928805174FDD4200CB17C4 /* Sources */,
+				48928818174FDD4200CB17C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CPH-Helper-Typicapp";
+			productName = ExamplePrivilegedHelper;
+			productReference = 4892881F174FDD4200CB17C4 /* com.sheepsystems.CocoaPrivilegedHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 		AA35BF741503C30200DA4314 /* CPHDemoApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA35BF931503C30200DA4314 /* Build configuration list for PBXNativeTarget "CPHDemoApp" */;
@@ -418,9 +467,9 @@
 			productReference = AA35BF751503C30200DA4314 /* CPHDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */ = {
+		AA35BFAF1503CB6C00DA4314 /* CPH-Helper-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "com.sheepsystems.CocoaPrivilegedHelper" */;
+			buildConfigurationList = AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "CPH-Helper-Demo" */;
 			buildPhases = (
 				AA35BFAC1503CB6C00DA4314 /* Sources */,
 				AA35BFAD1503CB6C00DA4314 /* Frameworks */,
@@ -429,7 +478,7 @@
 			);
 			dependencies = (
 			);
-			name = com.sheepsystems.CocoaPrivilegedHelper;
+			name = "CPH-Helper-Demo";
 			productName = ExamplePrivilegedHelper;
 			productReference = AA35BFB01503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */;
 			productType = "com.apple.product-type.tool";
@@ -474,8 +523,9 @@
 			projectRoot = "";
 			targets = (
 				AA35BF741503C30200DA4314 /* CPHDemoApp */,
-				AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */,
+				AA35BFAF1503CB6C00DA4314 /* CPH-Helper-Demo */,
 				AA35BFC91503CCDF00DA4314 /* cph-hellotool */,
+				48928804174FDD4200CB17C4 /* CPH-Helper-Typicapp */,
 			);
 		};
 /* End PBXProject section */
@@ -495,6 +545,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		48928805174FDD4200CB17C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48928806174FDD4200CB17C4 /* BetterAuthorizationSampleLib.c in Sources */,
+				48928807174FDD4200CB17C4 /* NSError+LowLevel.m in Sources */,
+				48928808174FDD4200CB17C4 /* HelperToolMain.c in Sources */,
+				48928809174FDD4200CB17C4 /* HelperToolTaskDoCopyPaths.c in Sources */,
+				4892880A174FDD4200CB17C4 /* HelperToolTaskDoGetUID.c in Sources */,
+				4892880B174FDD4200CB17C4 /* HelperToolTaskDoGetVersion.c in Sources */,
+				4892880C174FDD4200CB17C4 /* HelperToolTaskDoOpenSomeLowNumberedPorts.c in Sources */,
+				4892880D174FDD4200CB17C4 /* HelperToolTaskDoSetAnyUserPrefs.c in Sources */,
+				4892880E174FDD4200CB17C4 /* HelperToolTaskDoSetPermissions.c in Sources */,
+				4892880F174FDD4200CB17C4 /* HelperToolTaskDoStatPaths.c in Sources */,
+				48928810174FDD4200CB17C4 /* HelperToolTaskDoWriteDataToFile.c in Sources */,
+				48928811174FDD4200CB17C4 /* MoreCFQ.c in Sources */,
+				48928812174FDD4200CB17C4 /* RecursiveChown.c in Sources */,
+				48928813174FDD4200CB17C4 /* SSYUnixPathUtils.c in Sources */,
+				48928814174FDD4200CB17C4 /* HelperToolTaskDoInstallATool.c in Sources */,
+				48928817174FDD4200CB17C4 /* SSY_ASL.c in Sources */,
+				48928820174FDD7B00CB17C4 /* CPHTasks_Typicapp.m in Sources */,
+				48928821174FDD8900CB17C4 /* CommandProcs_Typicapp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA35BF711503C30200DA4314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,7 +628,7 @@
 /* Begin PBXTargetDependency section */
 		AA35BFC31503CBFC00DA4314 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA35BFAF1503CB6C00DA4314 /* com.sheepsystems.CocoaPrivilegedHelper */;
+			target = AA35BFAF1503CB6C00DA4314 /* CPH-Helper-Demo */;
 			targetProxy = AA35BFC21503CBFC00DA4314 /* PBXContainerItemProxy */;
 		};
 		AA35BFD51503CD1500DA4314 /* PBXTargetDependency */ = {
@@ -583,6 +658,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4892881D174FDD4200CB17C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Helper - Demo copy-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Library/CocoaPrivilegedHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Library/CocoaPrivilegedHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4892881E174FDD4200CB17C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Helper - Demo copy-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Library/CocoaPrivilegedHelper-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"Library/CocoaPrivilegedHelper-Launchd.plist",
+				);
+				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		AA35BF911503C30200DA4314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -685,7 +800,7 @@
 					__launchd_plist,
 					"Library/CocoaPrivilegedHelper-Launchd.plist",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -705,7 +820,7 @@
 					__launchd_plist,
 					"Library/CocoaPrivilegedHelper-Launchd.plist",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -729,6 +844,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4892881C174FDD4200CB17C4 /* Build configuration list for PBXNativeTarget "CPH-Helper-Typicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4892881D174FDD4200CB17C4 /* Debug */,
+				4892881E174FDD4200CB17C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA35BF6F1503C30100DA4314 /* Build configuration list for PBXProject "CocoaPrivilegedHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -747,7 +871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "com.sheepsystems.CocoaPrivilegedHelper" */ = {
+		AA35BFB71503CB6C00DA4314 /* Build configuration list for PBXNativeTarget "CPH-Helper-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA35BFB81503CB6C00DA4314 /* Debug */,

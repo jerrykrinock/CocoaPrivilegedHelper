@@ -1,10 +1,7 @@
 // Needed for any key constants used in the request/response dics:
 #include "CPHTasks_Demo.h"
 
-// Needed for COMMAND_PROC_ARGUMENTS:
-#include "CPH_Constants.h"
-
-// Provides some handy utilities for dealing with CF (CoreFoundation).
+// Needed for COMMAND_PROC_ARGUMENTS:// Provides some handy utilities for dealing with CF (CoreFoundation).
 // It may not be used in all tasks but is included so you don't lose it.
 #include "MoreCFQ.h"
 
@@ -16,7 +13,7 @@ OSStatus DoGetVersion(COMMAND_PROC_ARGUMENTS) {
 #pragma unused (aslMsg)
 	OSStatus					retval = noErr;
 	CFNumberRef					value;
-    static const int kCurrentVersion = 19;
+    static const int kCurrentVersion = 130524;
 	
 	// Pre-conditions
 	

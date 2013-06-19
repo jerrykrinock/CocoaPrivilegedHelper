@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA35BFAF1503CB6C00DA4314"
                BuildableName = "com.sheepsystems.CocoaPrivilegedHelper"
-               BlueprintName = "com.sheepsystems.CocoaPrivilegedHelper"
+               BlueprintName = "CPH-Helper-Demo"
                ReferencedContainer = "container:CocoaPrivilegedHelper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA35BFAF1503CB6C00DA4314"
             BuildableName = "com.sheepsystems.CocoaPrivilegedHelper"
-            BlueprintName = "com.sheepsystems.CocoaPrivilegedHelper"
+            BlueprintName = "CPH-Helper-Demo"
             ReferencedContainer = "container:CocoaPrivilegedHelper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -53,7 +53,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA35BFAF1503CB6C00DA4314"
             BuildableName = "com.sheepsystems.CocoaPrivilegedHelper"
-            BlueprintName = "com.sheepsystems.CocoaPrivilegedHelper"
+            BlueprintName = "CPH-Helper-Demo"
             ReferencedContainer = "container:CocoaPrivilegedHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -71,7 +71,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA35BFAF1503CB6C00DA4314"
             BuildableName = "com.sheepsystems.CocoaPrivilegedHelper"
-            BlueprintName = "com.sheepsystems.CocoaPrivilegedHelper"
+            BlueprintName = "CPH-Helper-Demo"
             ReferencedContainer = "container:CocoaPrivilegedHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

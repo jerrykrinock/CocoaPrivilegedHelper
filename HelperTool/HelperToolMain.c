@@ -1,6 +1,4 @@
 #include "BetterAuthorizationSampleLib.h"
-#include "SSY_ASL.h"
-
 extern const BASCommandProc kCommandProcs[] ;
 extern const BASCommandSpec kCommandSpecs[] ;
 

@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Helper - Demo copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
 		<key>com.sheepsystems.CocoaPrivilegedHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>48928804174FDD4200CB17C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AA35BF741503C30200DA4314</key>
 		<dict>
 			<key>primary</key>

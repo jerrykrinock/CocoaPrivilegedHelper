@@ -79,12 +79,13 @@ const BASCommandSpec nullCommandSpecs[] = {
 	if (status != errAuthorizationSuccess) {
 		ok = NO ;
         NSString* errorDesc = [NSString stringWithFormat:
-                               @"Failed to create AuthorizationRef for blessing, return code %ld",
+                               @"Could not install helper, because failed to create AuthorizationRef for blessing, return code %ld",
                                (long)status] ;
         error = [NSError errorWithDomain:CPHTaskmasterErrorDomain
                                     code:CPHTaskmasterFailedAutorizationCreate_ErrorCode
                                 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:
                                           errorDesc, NSLocalizedDescriptionKey,
+                                          label, @"Label",
                                           nil]] ;
 	}
     else {
@@ -101,7 +102,8 @@ const BASCommandSpec nullCommandSpecs[] = {
         ok = (result == true) ;
         if (!ok) {
             NSDictionary* userInfo = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      @"SMJobBless failed.  Check the underlying error, and also the five requirements listed at the end of ServiceManagement.h", NSLocalizedDescriptionKey,
+                                      @"Could not install helper, because SMJobBless failed.  Check the underlying error, and also the five requirements listed at the end of ServiceManagement.h", NSLocalizedDescriptionKey,
+                                      label, @"Label",
                                       error, NSUnderlyingErrorKey,
                                       nil] ;
             error = [NSError errorWithDomain:CPHTaskmasterErrorDomain
