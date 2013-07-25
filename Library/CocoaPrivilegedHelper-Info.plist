@@ -15,8 +15,8 @@
 		<string>identifier com.sheepsystems.CPHDemoApp and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
 		<string>identifier com.sheepsystems.BookMacster and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
 		<string>identifier com.sheepsystems.Smarky and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
-		<string>identifier com.sheepsystems.Syncmarks and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
-		<string>identifier com.sheepsystems.Macmarks and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
+		<string>identifier com.sheepsystems.Synkmark and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
+		<string>identifier com.sheepsystems.Mookmark and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
 	</array>
 </dict>
 </plist>
