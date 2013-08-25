@@ -46,7 +46,7 @@
 	}
 	
     if (error && error_p) {
-        *error_p = error ;
+       *error_p = error ;
     }
     
 	return ok ;
@@ -55,13 +55,12 @@
 - (BOOL)statPath:(NSString*)path
 			stat:(struct stat*)stat_p
 		 error_p:(NSError**)error_p {
-	// For efficiency in case the caller expects the path may not exist,
-	// and has passed error_p = NULL, we don't create a local error.
+    NSError* error = nil ;
 	NSArray* paths = [NSArray arrayWithObject:path] ;
 	NSDictionary* stats = nil ;
 	BOOL ok = [self statFilePaths:paths
 						  stats_p:&stats
-						  error_p:error_p] ;
+						  error_p:&error] ;
 
 	NSData* statData = [stats objectForKey:path] ;
 	struct stat aStat ;
@@ -71,8 +70,9 @@
 		memcpy(&aStat, bytes, statSize) ;
 		*stat_p = aStat ;
 	}
-	else if (error_p != NULL) {
-		NSError* underlyingError = [[*error_p userInfo] objectForKey:NSUnderlyingErrorKey] ;
+	
+    if (error && error_p) {
+		NSError* underlyingError = [[error userInfo] objectForKey:NSUnderlyingErrorKey] ;
 		NSDictionary* underlyingUserInfo = [underlyingError userInfo] ;
 		NSDictionary* errorCodes = [underlyingUserInfo objectForKey:@kErrorCodes] ;
 		NSNumber* errorCodeNumber = [errorCodes objectForKey:path] ;
@@ -98,7 +98,9 @@
 	return ok ;
 }
 
-- (NSDate*)modificationDateForPath:(NSString*)path 
+#if 0
+-- This method is not used.
+- (NSDate*)modificationDateForPath:(NSString*)path
 						   error_p:(NSError**)error_p {
 	struct stat aStat ;
     struct timespec emptyTimespec ;
@@ -117,5 +119,6 @@
 		
 	return date ;
 }
+#endif
 
 @end
