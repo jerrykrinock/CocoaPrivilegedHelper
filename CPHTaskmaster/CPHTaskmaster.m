@@ -154,13 +154,21 @@ const BASCommandSpec nullCommandSpecs[] = {
             SecRequirementRef requirement;
             OSStatus stErr;
             
-            stErr = SecRequirementCreateWithString((CFStringRef)[NSString stringWithFormat:@"identifier %@ and certificate leaf[subject.CN] = \"%@\"", [self privilegedHelperLabel], @kSigningCertCommonName], kSecCSDefaultFlags, &requirement );
+            stErr = SecRequirementCreateWithString(
+                                                   (CFStringRef)[NSString stringWithFormat:@"identifier %@ and certificate leaf[subject.CN] = \"%@\"", [self privilegedHelperLabel], @kSigningCertCommonName],
+                                                   kSecCSDefaultFlags,
+                                                   &requirement
+                                                   ) ;
             
             if ( stErr == noErr )
             {
                 SecStaticCodeRef staticCodeRef;
                 
-                stErr = SecStaticCodeCreateWithPath( (CFURLRef)installedPathURL, kSecCSDefaultFlags, &staticCodeRef );
+                stErr = SecStaticCodeCreateWithPath(
+                                                    (CFURLRef)installedPathURL,
+                                                    kSecCSDefaultFlags,
+                                                    &staticCodeRef
+                                                    ) ;
                 
                 if ( stErr == noErr )
                 {
@@ -168,7 +176,18 @@ const BASCommandSpec nullCommandSpecs[] = {
                     
                     needToInstall = NO;
                 }
+
+                // Memory leak fixed in BookMacster 1.17
+                if (staticCodeRef != NULL) {
+                    CFRelease(staticCodeRef) ;
+                }
             }
+            
+            // Memory leak fixed in BookMacster 1.17
+            if (requirement != NULL) {
+                CFRelease(requirement) ;
+            }
+
         }
     }
     [installedHelperJobData release] ;
