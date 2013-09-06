@@ -9,7 +9,7 @@
 	<key>CFBundleName</key>
 	<string>CocoaPrivilegedHelper</string>
 	<key>CFBundleVersion</key>
-	<string>20</string>
+	<string>21</string>
 	<key>SMAuthorizedClients</key>
 	<array>
 		<string>identifier com.sheepsystems.CPHDemoApp and certificate leaf[subject.CN] = &quot;Developer ID Application: Jerry Krinock&quot;</string>
