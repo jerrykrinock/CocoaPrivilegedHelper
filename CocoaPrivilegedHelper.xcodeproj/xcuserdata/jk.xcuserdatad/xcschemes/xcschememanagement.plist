@@ -7,22 +7,22 @@
 		<key>CPHDemoApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>11</integer>
 		</dict>
 		<key>Helper-Typicapp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>38</integer>
 		</dict>
 		<key>com.sheepsystems.CocoaPrivilegedHelper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>12</integer>
 		</dict>
 		<key>cph-hellotool.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>13</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
