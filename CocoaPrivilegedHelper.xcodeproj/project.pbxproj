@@ -507,7 +507,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SSY;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sheep Systems";
 			};
 			buildConfigurationList = AA35BF6F1503C30100DA4314 /* Build configuration list for PBXProject "CocoaPrivilegedHelper" */;
@@ -702,7 +702,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
