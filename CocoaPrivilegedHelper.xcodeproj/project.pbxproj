@@ -509,6 +509,11 @@
 				CLASSPREFIX = SSY;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sheep Systems";
+				TargetAttributes = {
+					48928804174FDD4200CB17C4 = {
+						DevelopmentTeam = 4MAMECY9VS;
+					};
+				};
 			};
 			buildConfigurationList = AA35BF6F1503C30100DA4314 /* Build configuration list for PBXProject "CocoaPrivilegedHelper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -661,6 +666,8 @@
 		4892881D174FDD4200CB17C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				INFOPLIST_FILE = "Helper - Demo copy-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = (
@@ -674,6 +681,7 @@
 					"Library/CocoaPrivilegedHelper-Launchd.plist",
 				);
 				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -681,6 +689,8 @@
 		4892881E174FDD4200CB17C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				INFOPLIST_FILE = "Helper - Demo copy-Info.plist";
 				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = (
@@ -694,6 +704,7 @@
 					"Library/CocoaPrivilegedHelper-Launchd.plist",
 				);
 				PRODUCT_NAME = com.sheepsystems.CocoaPrivilegedHelper;
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
