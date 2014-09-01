@@ -5,8 +5,19 @@
 extern NSString* const CPHTaskmasterErrorDomain ;
 
 /*!
- @brief     A class for accessing a privileged Helper Tool to perform authorized tasks
- @details   Designed to instantiated as a singleton, but you could have more than
+ @brief     A class for accessing a privileged Helper Tool to perform authorized
+ tasks WHICH HAS BECOME INCREASINGLY PROBLEMATIC IN RECENT VERSIONS OF OS X
+
+ @details   WARNING:  This class has been giving me trouble in recent verions
+ of OS X, in particular I've been getting CPHTaskmasterBlessingFailed errors
+ when attempting to install the helper tool.  Because I deemed the feature
+ using this class to be not worth fixing, I've stopped using it.  If you want
+ to use this class, you'll need to study Apple's latest security model and
+ the current requirements of SMJobBless.  I also remember seeing that there is
+ now a successor to BetterAuthorizationSample, but can't find it now.  I think
+ that Apple needs to update TN2095.  -- JK, 2014 09 01
+ 
+ Designed to instantiated as a singleton, but you could have more than
  one if you really wanted to.
  */
 @interface CPHTaskmaster : NSObject {

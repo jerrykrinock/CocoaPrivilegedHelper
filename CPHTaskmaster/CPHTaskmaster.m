@@ -145,9 +145,9 @@ const BASCommandSpec nullCommandSpecs[] = {
         
         NSDictionary* currentInfoPlist = (NSDictionary*)CFBundleCopyInfoDictionaryForURL( (CFURLRef)currentHelperToolURL );
         NSString* currentBundleVersion = [currentInfoPlist objectForKey:@"CFBundleVersion"];
-        [currentInfoPlist release] ;
  
         NSInteger currentVersion = [currentBundleVersion integerValue];
+        [currentInfoPlist release] ;
         
         if ( currentVersion == installedVersion )
         {
