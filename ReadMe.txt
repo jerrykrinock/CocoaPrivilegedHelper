@@ -2,6 +2,8 @@ CocoaPrivilegedHelper
 by Jerry Krinock
 -----------------------
 
+**This project is legacy code.  I no longer use it.  I suspect it will not work in current versions of macOS.**
+
 This project provides a library for doing tasks in Cocoa with privilege escalation.  It is the successor to my old AuthorizedTasksInCocoa project.  It has been updated by following the PrivilegedHelperExample published by Steve Streeting (see 'Credits', below).  The difference is that the it does not call AuthorizationExecuteWithPrivileges which was deprecated and replaced with SMJobBless in Mac OS X 10.6.  This project requires Mac OS X 10.6 or later.
 
 If you do not need to support Mac OS X 10.6, do not use this project.  There is an even better method, which uses XPC.
